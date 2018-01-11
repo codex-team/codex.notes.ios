@@ -12,7 +12,6 @@
 		233F2C8A2007BF0700D27743 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 233F2C882007BF0700D27743 /* Main.storyboard */; };
 		233F2C8C2007BF0700D27743 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 233F2C8B2007BF0700D27743 /* Assets.xcassets */; };
 		233F2C8F2007BF0700D27743 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 233F2C8D2007BF0700D27743 /* LaunchScreen.storyboard */; };
-		233F2C9A2007BF0700D27743 /* NotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233F2C992007BF0700D27743 /* NotesTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +33,6 @@
 		233F2C8E2007BF0700D27743 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		233F2C902007BF0700D27743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		233F2C952007BF0700D27743 /* NotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		233F2C992007BF0700D27743 /* NotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTests.swift; sourceTree = "<group>"; };
 		233F2C9B2007BF0700D27743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,7 +88,6 @@
 		233F2C982007BF0700D27743 /* NotesTests */ = {
 			isa = PBXGroup;
 			children = (
-				233F2C992007BF0700D27743 /* NotesTests.swift */,
 				233F2C9B2007BF0700D27743 /* Info.plist */,
 			);
 			path = NotesTests;
@@ -106,6 +103,7 @@
 				233F2C7D2007BF0700D27743 /* Sources */,
 				233F2C7E2007BF0700D27743 /* Frameworks */,
 				233F2C7F2007BF0700D27743 /* Resources */,
+				233F2CA42007BF7700D27743 /* Run Script SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -194,6 +192,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		233F2CA42007BF7700D27743 /* Run Script SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script SwiftLint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Если не \"master\" ветка, то проверяются только измененные файлы .swift\nif which swiftlint >/dev/null; then\nif [ $(git symbolic-ref --short -q HEAD) = \"master\" ]; then\necho \"Develop branch! Standart check\"\nswiftlint\nelse\ncount=0\nfor file_path in $(git ls-files -om --exclude-from=.gitignore | grep \".swift$\"); do\nexport SCRIPT_INPUT_FILE_$count=$file_path\ncount=$((count + 1))\ndone\nfor file_path in $(git diff --cached --name-only | grep \".swift$\"); do\nexport SCRIPT_INPUT_FILE_$count=$file_path\ncount=$((count + 1))\ndone\nexport SCRIPT_INPUT_FILE_COUNT=$count\nif [ \"$count\" -ne 0 ]; then\necho \"Found lintable files! Linting...\"\nswiftlint lint --use-script-input-files --config .swiftlint.yml\nelse\necho \"No files to lint!\"\nexit 0\nfi\nfi\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		233F2C7D2007BF0700D27743 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -208,7 +223,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				233F2C9A2007BF0700D27743 /* NotesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
