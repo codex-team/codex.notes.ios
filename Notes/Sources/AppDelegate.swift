@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Apollo
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
+    let graphQlEndpoint = "https://api.notes.ifmo.su/graphql"
+    let apollo = ApolloClient(url: URL(string: graphQlEndpoint)!)
+    
+    let query = GetUserQuery(id: "taly")
+    apollo.fetch(query: query) { [weak self] result, error in
+      if let error = error {
+        print("\(error)")
+      }
+      guard let infor = result?.data?.user else {
+        return
+      }
+      print(infor)
+    }
     return true
   }
 }

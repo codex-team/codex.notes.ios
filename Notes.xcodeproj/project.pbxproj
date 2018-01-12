@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230F2EA520095032007B64B7 /* FirstReques.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 230F2EA420095032007B64B7 /* FirstReques.graphql */; };
+		230F2EA720095451007B64B7 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230F2EA620095451007B64B7 /* API.swift */; };
 		233F2C852007BF0700D27743 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233F2C842007BF0700D27743 /* AppDelegate.swift */; };
 		233F2C872007BF0700D27743 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233F2C862007BF0700D27743 /* ViewController.swift */; };
 		233F2C8A2007BF0700D27743 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 233F2C882007BF0700D27743 /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		230F2EA420095032007B64B7 /* FirstReques.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = FirstReques.graphql; sourceTree = "<group>"; };
+		230F2EA620095451007B64B7 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = Notes/API.swift; sourceTree = SOURCE_ROOT; };
 		233F2C812007BF0700D27743 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		233F2C842007BF0700D27743 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		233F2C862007BF0700D27743 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 			children = (
 				233F2C842007BF0700D27743 /* AppDelegate.swift */,
 				233F2C862007BF0700D27743 /* ViewController.swift */,
+				230F2EA620095451007B64B7 /* API.swift */,
+				230F2EA420095032007B64B7 /* FirstReques.graphql */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -139,6 +145,7 @@
 				233F2CA42007BF7700D27743 /* Run Script SwiftLint */,
 				6366ADA8E973DE5B4CAB9D4F /* [CP] Embed Pods Frameworks */,
 				F5A36A89B473D0AAA4051EA5 /* [CP] Copy Pods Resources */,
+				230F2EA320094FFD007B64B7 /* Run Script ApolloGen */,
 			);
 			buildRules = (
 			);
@@ -213,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				233F2C8F2007BF0700D27743 /* LaunchScreen.storyboard in Resources */,
+				230F2EA520095032007B64B7 /* FirstReques.graphql in Resources */,
 				233F2C8C2007BF0700D27743 /* Assets.xcassets in Resources */,
 				233F2C8A2007BF0700D27743 /* Main.storyboard in Resources */,
 			);
@@ -245,6 +253,20 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		230F2EA320094FFD007B64B7 /* Run Script ApolloGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script ApolloGen";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\necho \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\nexit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-codegen.sh generate $(find . -name '*.graphql') --schema schema.json --output API.swift";
 		};
 		233F2CA42007BF7700D27743 /* Run Script SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -301,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				233F2C872007BF0700D27743 /* ViewController.swift in Sources */,
+				230F2EA720095451007B64B7 /* API.swift in Sources */,
 				233F2C852007BF0700D27743 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,6 +1,6 @@
 excluded: # paths to ignore during linting.
   - Pods
-
+  - Notes/API.swift
 identifier_name:
   min_length: 2
   max_length: 50
