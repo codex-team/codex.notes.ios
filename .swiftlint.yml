@@ -1,6 +1,5 @@
 excluded: # paths to ignore during linting.
   - Pods
-  - CHMeetupApp/Resources/Storyboards
 
 identifier_name:
   min_length: 2
