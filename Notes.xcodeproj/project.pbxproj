@@ -12,6 +12,7 @@
 		233F2C8A2007BF0700D27743 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 233F2C882007BF0700D27743 /* Main.storyboard */; };
 		233F2C8C2007BF0700D27743 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 233F2C8B2007BF0700D27743 /* Assets.xcassets */; };
 		233F2C8F2007BF0700D27743 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 233F2C8D2007BF0700D27743 /* LaunchScreen.storyboard */; };
+		7FDC886D7B7991E9CE78D342 /* Pods_Notes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C5FB0833E0260496BD090E /* Pods_Notes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,9 @@
 		233F2C902007BF0700D27743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		233F2C952007BF0700D27743 /* NotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		233F2C9B2007BF0700D27743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C53D583B197BAC8CEC634D64 /* Pods-Notes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Notes/Pods-Notes.debug.xcconfig"; sourceTree = "<group>"; };
+		ECB8FF62CE268ADC29DE6137 /* Pods-Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Notes/Pods-Notes.release.xcconfig"; sourceTree = "<group>"; };
+		F4C5FB0833E0260496BD090E /* Pods_Notes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FDC886D7B7991E9CE78D342 /* Pods_Notes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +65,8 @@
 				233F2C832007BF0700D27743 /* Notes */,
 				233F2C982007BF0700D27743 /* NotesTests */,
 				233F2C822007BF0700D27743 /* Products */,
+				A33D579DA4DD4EB39995B7D2 /* Pods */,
+				6B5642992281895780AA3759 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,8 +82,7 @@
 		233F2C832007BF0700D27743 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				233F2C842007BF0700D27743 /* AppDelegate.swift */,
-				233F2C862007BF0700D27743 /* ViewController.swift */,
+				233F2CA52007C75F00D27743 /* Sources */,
 				233F2C882007BF0700D27743 /* Main.storyboard */,
 				233F2C8B2007BF0700D27743 /* Assets.xcassets */,
 				233F2C8D2007BF0700D27743 /* LaunchScreen.storyboard */,
@@ -93,6 +99,32 @@
 			path = NotesTests;
 			sourceTree = "<group>";
 		};
+		233F2CA52007C75F00D27743 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				233F2C842007BF0700D27743 /* AppDelegate.swift */,
+				233F2C862007BF0700D27743 /* ViewController.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		6B5642992281895780AA3759 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4C5FB0833E0260496BD090E /* Pods_Notes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A33D579DA4DD4EB39995B7D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C53D583B197BAC8CEC634D64 /* Pods-Notes.debug.xcconfig */,
+				ECB8FF62CE268ADC29DE6137 /* Pods-Notes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,10 +132,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 233F2C9E2007BF0700D27743 /* Build configuration list for PBXNativeTarget "Notes" */;
 			buildPhases = (
+				1B38036969C92920C3B92A2D /* [CP] Check Pods Manifest.lock */,
 				233F2C7D2007BF0700D27743 /* Sources */,
 				233F2C7E2007BF0700D27743 /* Frameworks */,
 				233F2C7F2007BF0700D27743 /* Resources */,
 				233F2CA42007BF7700D27743 /* Run Script SwiftLint */,
+				6366ADA8E973DE5B4CAB9D4F /* [CP] Embed Pods Frameworks */,
+				F5A36A89B473D0AAA4051EA5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +228,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1B38036969C92920C3B92A2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Notes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		233F2CA42007BF7700D27743 /* Run Script SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -206,6 +259,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Если не \"master\" ветка, то проверяются только измененные файлы .swift\nif which swiftlint >/dev/null; then\nif [ $(git symbolic-ref --short -q HEAD) = \"master\" ]; then\necho \"Develop branch! Standart check\"\nswiftlint\nelse\ncount=0\nfor file_path in $(git ls-files -om --exclude-from=.gitignore | grep \".swift$\"); do\nexport SCRIPT_INPUT_FILE_$count=$file_path\ncount=$((count + 1))\ndone\nfor file_path in $(git diff --cached --name-only | grep \".swift$\"); do\nexport SCRIPT_INPUT_FILE_$count=$file_path\ncount=$((count + 1))\ndone\nexport SCRIPT_INPUT_FILE_COUNT=$count\nif [ \"$count\" -ne 0 ]; then\necho \"Found lintable files! Linting...\"\nswiftlint lint --use-script-input-files --config .swiftlint.yml\nelse\necho \"No files to lint!\"\nexit 0\nfi\nfi\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		6366ADA8E973DE5B4CAB9D4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Notes/Pods-Notes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Apollo/Apollo.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Apollo.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Notes/Pods-Notes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5A36A89B473D0AAA4051EA5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Notes/Pods-Notes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -365,6 +451,7 @@
 		};
 		233F2C9F2007BF0700D27743 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C53D583B197BAC8CEC634D64 /* Pods-Notes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -380,6 +467,7 @@
 		};
 		233F2CA02007BF0700D27743 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECB8FF62CE268ADC29DE6137 /* Pods-Notes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
