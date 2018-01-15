@@ -18,9 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                    didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     let graphQlEndpoint = "https://api.notes.ifmo.su/graphql"
     let apollo = ApolloClient(url: URL(string: graphQlEndpoint)!)
-    
+
     let query = GetUserQuery(id: "taly")
-    apollo.fetch(query: query) { [weak self] result, error in
+    apollo.fetch(query: query) { result, error in
       if let error = error {
         print("\(error)")
       }
