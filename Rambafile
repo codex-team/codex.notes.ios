@@ -1,0 +1,27 @@
+### Headers settings
+company: Codex
+
+### Xcode project settings
+project_name: Notes
+xcodeproj_path: Notes.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: Notes
+
+### Tests generation settings section
+# The tests target name
+test_target: NotesTests
+
+# The file path for new tests
+test_file_path: NotesTests
+
+# The Xcode group path to new tests
+test_group_path: NotesTests
+
+### Dependencies settings section
+podfile_path: podfile
+
+### Templates
+templates:
+- {name: swifty_viper}

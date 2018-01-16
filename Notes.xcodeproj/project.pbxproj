@@ -7,11 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15ED379BAD42BE25BDF2F606 /* ShowAllNotesModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13508DA3F1E30796A9DE289C /* ShowAllNotesModuleRouter.swift */; };
+		18574BDDCFECBF1EBE4F3B61 /* ShowAllNotesModuleViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2A6AB32B5C8023F5D6A9AA /* ShowAllNotesModuleViewInput.swift */; };
+		195EC829FF9D44B177D5F887 /* ShowAllNotesModuleConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AB9472800DCAA0EE88FD80 /* ShowAllNotesModuleConfiguratorTests.swift */; };
+		1D441A564DBACAFE9F0A020E /* ShowAllNotesModuleInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34B380B00CF9E4E139A0C8 /* ShowAllNotesModuleInitializer.swift */; };
 		230F2EA520095032007B64B7 /* FirstReques.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 230F2EA420095032007B64B7 /* FirstReques.graphql */; };
 		230F2EA720095451007B64B7 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230F2EA620095451007B64B7 /* API.swift */; };
 		233F2C852007BF0700D27743 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233F2C842007BF0700D27743 /* AppDelegate.swift */; };
 		233F2C8C2007BF0700D27743 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 233F2C8B2007BF0700D27743 /* Images.xcassets */; };
+		23E73B13200D1B590054AFC0 /* NotesTests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = 233F2C952007BF0700D27743 /* NotesTests.xctest */; };
+		2BDC3072E8B95EEE189DE770 /* ShowAllNotesModuleRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39690115E215173B06AD5585 /* ShowAllNotesModuleRouterInput.swift */; };
+		4D508BF748AB6305AB5C52C1 /* ShowAllNotesModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548AD53DD46781BD2D3555F4 /* ShowAllNotesModuleViewController.swift */; };
+		5F24AACD76E6A081DD806141 /* ShowAllNotesModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1264BA81FFAE1AB5E5EBBE /* ShowAllNotesModulePresenter.swift */; };
+		6B675A75F5F587B5DC8D0FFB /* ShowAllNotesModuleModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEECA444A66B047ECB2F663 /* ShowAllNotesModuleModuleInput.swift */; };
+		729C6655061BB908456F3A4F /* ShowAllNotesModuleRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8421A7C069ADD00A78B5EA1D /* ShowAllNotesModuleRouterTests.swift */; };
+		7B9CEB2444AB51A2BF8AEC8E /* ShowAllNotesModuleViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E97760239CCAAB86734D61 /* ShowAllNotesModuleViewTests.swift */; };
 		7FDC886D7B7991E9CE78D342 /* Pods_Notes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C5FB0833E0260496BD090E /* Pods_Notes.framework */; };
+		873462CDC4912226E11DF4E6 /* ShowAllNotesModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BC13A50C927A7AD95A7A08 /* ShowAllNotesModuleConfigurator.swift */; };
+		87B80B21F027443C7904FF0B /* ShowAllNotesModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632D938903E9A3362847A349 /* ShowAllNotesModuleInteractor.swift */; };
+		9AEF466365EB575D433D8669 /* ShowAllNotesModuleInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7E80CBAD6D57CEFD4CC1CA /* ShowAllNotesModuleInteractorTests.swift */; };
+		9DA895EDDE363DDE3ED5C1AC /* ShowAllNotesModulePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1293040628E6246786758A8 /* ShowAllNotesModulePresenterTests.swift */; };
+		B2111BA57367B33384C83BDC /* ShowAllNotesModuleViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E629F22ED8F7EA2467A9686C /* ShowAllNotesModuleViewOutput.swift */; };
+		D0E015AA40531E60EE242A14 /* ShowAllNotesModuleInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF345249C1CF902E1080ECE /* ShowAllNotesModuleInteractorOutput.swift */; };
+		DD9FEE1C308EEAFB5DBB6D8D /* ShowAllNotesModuleInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E33E82E60D2917C39C09760 /* ShowAllNotesModuleInteractorInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13508DA3F1E30796A9DE289C /* ShowAllNotesModuleRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShowAllNotesModuleRouter.swift; sourceTree = "<group>"; };
 		230F2EA420095032007B64B7 /* FirstReques.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = FirstReques.graphql; sourceTree = "<group>"; };
 		230F2EA620095451007B64B7 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = Notes/API.swift; sourceTree = SOURCE_ROOT; };
 		233F2C812007BF0700D27743 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,8 +51,24 @@
 		233F2C8B2007BF0700D27743 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		233F2C902007BF0700D27743 /* Notes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Notes-Info.plist"; sourceTree = "<group>"; };
 		233F2C952007BF0700D27743 /* NotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		233F2C9B2007BF0700D27743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		233F2C9B2007BF0700D27743 /* NotesTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NotesTest-Info.plist"; sourceTree = "<group>"; };
+		2DEECA444A66B047ECB2F663 /* ShowAllNotesModuleModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShowAllNotesModuleModuleInput.swift; sourceTree = "<group>"; };
+		2E33E82E60D2917C39C09760 /* ShowAllNotesModuleInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShowAllNotesModuleInteractorInput.swift; sourceTree = "<group>"; };
+		39690115E215173B06AD5585 /* ShowAllNotesModuleRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShowAllNotesModuleRouterInput.swift; sourceTree = "<group>"; };
+		45E97760239CCAAB86734D61 /* ShowAllNotesModuleViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShowAllNotesModuleViewTests.swift; sourceTree = "<group>"; };
+		4B34B380B00CF9E4E139A0C8 /* ShowAllNotesModuleInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShowAllNotesModuleInitializer.swift; sourceTree = "<group>"; };
+		548AD53DD46781BD2D3555F4 /* ShowAllNotesModuleViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShowAllNotesModuleViewController.swift; sourceTree = "<group>"; };
+		632D938903E9A3362847A349 /* ShowAllNotesModuleInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShowAllNotesModuleInteractor.swift; sourceTree = "<group>"; };
+		65AB9472800DCAA0EE88FD80 /* ShowAllNotesModuleConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShowAllNotesModuleConfiguratorTests.swift; sourceTree = "<group>"; };
+		7C2A6AB32B5C8023F5D6A9AA /* ShowAllNotesModuleViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShowAllNotesModuleViewInput.swift; sourceTree = "<group>"; };
+		7CF345249C1CF902E1080ECE /* ShowAllNotesModuleInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShowAllNotesModuleInteractorOutput.swift; sourceTree = "<group>"; };
+		8421A7C069ADD00A78B5EA1D /* ShowAllNotesModuleRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShowAllNotesModuleRouterTests.swift; sourceTree = "<group>"; };
+		8A1264BA81FFAE1AB5E5EBBE /* ShowAllNotesModulePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShowAllNotesModulePresenter.swift; sourceTree = "<group>"; };
+		A1293040628E6246786758A8 /* ShowAllNotesModulePresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShowAllNotesModulePresenterTests.swift; sourceTree = "<group>"; };
+		BC7E80CBAD6D57CEFD4CC1CA /* ShowAllNotesModuleInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShowAllNotesModuleInteractorTests.swift; sourceTree = "<group>"; };
+		C4BC13A50C927A7AD95A7A08 /* ShowAllNotesModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShowAllNotesModuleConfigurator.swift; sourceTree = "<group>"; };
 		C53D583B197BAC8CEC634D64 /* Pods-Notes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Notes/Pods-Notes.debug.xcconfig"; sourceTree = "<group>"; };
+		E629F22ED8F7EA2467A9686C /* ShowAllNotesModuleViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShowAllNotesModuleViewOutput.swift; sourceTree = "<group>"; };
 		ECB8FF62CE268ADC29DE6137 /* Pods-Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Notes/Pods-Notes.release.xcconfig"; sourceTree = "<group>"; };
 		F4C5FB0833E0260496BD090E /* Pods_Notes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -57,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07674F972F63360EAC6F7910 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A1293040628E6246786758A8 /* ShowAllNotesModulePresenterTests.swift */,
+			);
+			name = Presenter;
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		233F2C782007BF0700D27743 = {
 			isa = PBXGroup;
 			children = (
@@ -90,7 +134,8 @@
 		233F2C982007BF0700D27743 /* NotesTests */ = {
 			isa = PBXGroup;
 			children = (
-				233F2C9B2007BF0700D27743 /* Info.plist */,
+				233F2C9B2007BF0700D27743 /* NotesTest-Info.plist */,
+				6911B823DA411E25374A88E7 /* ShowAllNotesModule */,
 			);
 			path = NotesTests;
 			sourceTree = "<group>";
@@ -119,6 +164,7 @@
 		23E73B08200D18660054AFC0 /* WatchingAllNotesStory */ = {
 			isa = PBXGroup;
 			children = (
+				8299EA4FA5CEA1576BA79DC4 /* ShowAllNotesModule */,
 			);
 			path = WatchingAllNotesStory;
 			sourceTree = "<group>";
@@ -177,12 +223,107 @@
 			path = SeedData;
 			sourceTree = "<group>";
 		};
+		268A551C097DADACE920D07D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8421A7C069ADD00A78B5EA1D /* ShowAllNotesModuleRouterTests.swift */,
+			);
+			name = Router;
+			path = Router;
+			sourceTree = "<group>";
+		};
+		4CD4D4ED03892214778785C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C2A6AB32B5C8023F5D6A9AA /* ShowAllNotesModuleViewInput.swift */,
+				E629F22ED8F7EA2467A9686C /* ShowAllNotesModuleViewOutput.swift */,
+				548AD53DD46781BD2D3555F4 /* ShowAllNotesModuleViewController.swift */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		6911B823DA411E25374A88E7 /* ShowAllNotesModule */ = {
+			isa = PBXGroup;
+			children = (
+				6E386A2C3520D3B873187E5C /* Configurator */,
+				C477E1268001EBAA67CB0D99 /* View */,
+				8C7735046F4875C6EB94BE74 /* Interactor */,
+				07674F972F63360EAC6F7910 /* Presenter */,
+				268A551C097DADACE920D07D /* Router */,
+			);
+			name = ShowAllNotesModule;
+			path = ShowAllNotesModule;
+			sourceTree = "<group>";
+		};
 		6B5642992281895780AA3759 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				F4C5FB0833E0260496BD090E /* Pods_Notes.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C2E0A17306A063996181752 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				39690115E215173B06AD5585 /* ShowAllNotesModuleRouterInput.swift */,
+				13508DA3F1E30796A9DE289C /* ShowAllNotesModuleRouter.swift */,
+			);
+			name = Router;
+			path = Router;
+			sourceTree = "<group>";
+		};
+		6E386A2C3520D3B873187E5C /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				65AB9472800DCAA0EE88FD80 /* ShowAllNotesModuleConfiguratorTests.swift */,
+			);
+			name = Configurator;
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		8299EA4FA5CEA1576BA79DC4 /* ShowAllNotesModule */ = {
+			isa = PBXGroup;
+			children = (
+				4CD4D4ED03892214778785C0 /* View */,
+				9B949AEEA595C72C050B6655 /* Presenter */,
+				A172566306D10CCA5A1BA096 /* Interactor */,
+				6C2E0A17306A063996181752 /* Router */,
+				E74CE6DC7ED654C9B6872A58 /* Configurator */,
+			);
+			name = ShowAllNotesModule;
+			path = ShowAllNotesModule;
+			sourceTree = "<group>";
+		};
+		8C7735046F4875C6EB94BE74 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BC7E80CBAD6D57CEFD4CC1CA /* ShowAllNotesModuleInteractorTests.swift */,
+			);
+			name = Interactor;
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		9B949AEEA595C72C050B6655 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2DEECA444A66B047ECB2F663 /* ShowAllNotesModuleModuleInput.swift */,
+				8A1264BA81FFAE1AB5E5EBBE /* ShowAllNotesModulePresenter.swift */,
+			);
+			name = Presenter;
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A172566306D10CCA5A1BA096 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2E33E82E60D2917C39C09760 /* ShowAllNotesModuleInteractorInput.swift */,
+				7CF345249C1CF902E1080ECE /* ShowAllNotesModuleInteractorOutput.swift */,
+				632D938903E9A3362847A349 /* ShowAllNotesModuleInteractor.swift */,
+			);
+			name = Interactor;
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		A33D579DA4DD4EB39995B7D2 /* Pods */ = {
@@ -192,6 +333,25 @@
 				ECB8FF62CE268ADC29DE6137 /* Pods-Notes.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C477E1268001EBAA67CB0D99 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				45E97760239CCAAB86734D61 /* ShowAllNotesModuleViewTests.swift */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		E74CE6DC7ED654C9B6872A58 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				C4BC13A50C927A7AD95A7A08 /* ShowAllNotesModuleConfigurator.swift */,
+				4B34B380B00CF9E4E139A0C8 /* ShowAllNotesModuleInitializer.swift */,
+			);
+			name = Configurator;
+			path = Configurator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +451,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23E73B13200D1B590054AFC0 /* NotesTests.xctest in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +546,18 @@
 			files = (
 				230F2EA720095451007B64B7 /* API.swift in Sources */,
 				233F2C852007BF0700D27743 /* AppDelegate.swift in Sources */,
+				18574BDDCFECBF1EBE4F3B61 /* ShowAllNotesModuleViewInput.swift in Sources */,
+				B2111BA57367B33384C83BDC /* ShowAllNotesModuleViewOutput.swift in Sources */,
+				4D508BF748AB6305AB5C52C1 /* ShowAllNotesModuleViewController.swift in Sources */,
+				6B675A75F5F587B5DC8D0FFB /* ShowAllNotesModuleModuleInput.swift in Sources */,
+				5F24AACD76E6A081DD806141 /* ShowAllNotesModulePresenter.swift in Sources */,
+				DD9FEE1C308EEAFB5DBB6D8D /* ShowAllNotesModuleInteractorInput.swift in Sources */,
+				D0E015AA40531E60EE242A14 /* ShowAllNotesModuleInteractorOutput.swift in Sources */,
+				87B80B21F027443C7904FF0B /* ShowAllNotesModuleInteractor.swift in Sources */,
+				2BDC3072E8B95EEE189DE770 /* ShowAllNotesModuleRouterInput.swift in Sources */,
+				15ED379BAD42BE25BDF2F606 /* ShowAllNotesModuleRouter.swift in Sources */,
+				873462CDC4912226E11DF4E6 /* ShowAllNotesModuleConfigurator.swift in Sources */,
+				1D441A564DBACAFE9F0A020E /* ShowAllNotesModuleInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +565,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				195EC829FF9D44B177D5F887 /* ShowAllNotesModuleConfiguratorTests.swift in Sources */,
+				7B9CEB2444AB51A2BF8AEC8E /* ShowAllNotesModuleViewTests.swift in Sources */,
+				9AEF466365EB575D433D8669 /* ShowAllNotesModuleInteractorTests.swift in Sources */,
+				9DA895EDDE363DDE3ED5C1AC /* ShowAllNotesModulePresenterTests.swift in Sources */,
+				729C6655061BB908456F3A4F /* ShowAllNotesModuleRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,6 +700,7 @@
 			baseConfigurationReference = C53D583B197BAC8CEC634D64 /* Pods-Notes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MEH36U69XD;
 				INFOPLIST_FILE = "$(SRCROOT)/Notes/SupportingFiles/Notes-Info.plist";
@@ -529,6 +708,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Codex.Notes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -539,6 +719,7 @@
 			baseConfigurationReference = ECB8FF62CE268ADC29DE6137 /* Pods-Notes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MEH36U69XD;
 				INFOPLIST_FILE = "$(SRCROOT)/Notes/SupportingFiles/Notes-Info.plist";
@@ -546,6 +727,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Codex.Notes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
