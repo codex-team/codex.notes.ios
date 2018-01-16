@@ -15,6 +15,18 @@
 		230F2EA720095451007B64B7 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230F2EA620095451007B64B7 /* API.swift */; };
 		233F2C852007BF0700D27743 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233F2C842007BF0700D27743 /* AppDelegate.swift */; };
 		233F2C8C2007BF0700D27743 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 233F2C8B2007BF0700D27743 /* Images.xcassets */; };
+		236A1A24200E6DA6001AEA88 /* ShowAllNotesModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548AD53DD46781BD2D3555F4 /* ShowAllNotesModuleViewController.swift */; };
+		236A1A26200E6DCE001AEA88 /* ShowAllNotesModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BC13A50C927A7AD95A7A08 /* ShowAllNotesModuleConfigurator.swift */; };
+		236A1A27200E6DE1001AEA88 /* ShowAllNotesModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1264BA81FFAE1AB5E5EBBE /* ShowAllNotesModulePresenter.swift */; };
+		236A1A28200E6DF0001AEA88 /* ShowAllNotesModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632D938903E9A3362847A349 /* ShowAllNotesModuleInteractor.swift */; };
+		236A1A29200E6DF9001AEA88 /* ShowAllNotesModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13508DA3F1E30796A9DE289C /* ShowAllNotesModuleRouter.swift */; };
+		236A1A2A200E6E5C001AEA88 /* ShowAllNotesModuleViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2A6AB32B5C8023F5D6A9AA /* ShowAllNotesModuleViewInput.swift */; };
+		236A1A2B200E6E5F001AEA88 /* ShowAllNotesModuleViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E629F22ED8F7EA2467A9686C /* ShowAllNotesModuleViewOutput.swift */; };
+		236A1A2C200E6E64001AEA88 /* ShowAllNotesModuleModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEECA444A66B047ECB2F663 /* ShowAllNotesModuleModuleInput.swift */; };
+		236A1A2D200E6E6A001AEA88 /* ShowAllNotesModuleInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E33E82E60D2917C39C09760 /* ShowAllNotesModuleInteractorInput.swift */; };
+		236A1A2E200E6E6C001AEA88 /* ShowAllNotesModuleInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF345249C1CF902E1080ECE /* ShowAllNotesModuleInteractorOutput.swift */; };
+		236A1A2F200E6E72001AEA88 /* ShowAllNotesModuleRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39690115E215173B06AD5585 /* ShowAllNotesModuleRouterInput.swift */; };
+		236A1A30200E6E83001AEA88 /* ShowAllNotesModuleInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B34B380B00CF9E4E139A0C8 /* ShowAllNotesModuleInitializer.swift */; };
 		23E73B13200D1B590054AFC0 /* NotesTests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = 233F2C952007BF0700D27743 /* NotesTests.xctest */; };
 		2BDC3072E8B95EEE189DE770 /* ShowAllNotesModuleRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39690115E215173B06AD5585 /* ShowAllNotesModuleRouterInput.swift */; };
 		4D508BF748AB6305AB5C52C1 /* ShowAllNotesModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548AD53DD46781BD2D3555F4 /* ShowAllNotesModuleViewController.swift */; };
@@ -97,7 +109,6 @@
 			children = (
 				A1293040628E6246786758A8 /* ShowAllNotesModulePresenterTests.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -228,7 +239,6 @@
 			children = (
 				8421A7C069ADD00A78B5EA1D /* ShowAllNotesModuleRouterTests.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -239,7 +249,6 @@
 				E629F22ED8F7EA2467A9686C /* ShowAllNotesModuleViewOutput.swift */,
 				548AD53DD46781BD2D3555F4 /* ShowAllNotesModuleViewController.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -252,7 +261,6 @@
 				07674F972F63360EAC6F7910 /* Presenter */,
 				268A551C097DADACE920D07D /* Router */,
 			);
-			name = ShowAllNotesModule;
 			path = ShowAllNotesModule;
 			sourceTree = "<group>";
 		};
@@ -270,7 +278,6 @@
 				39690115E215173B06AD5585 /* ShowAllNotesModuleRouterInput.swift */,
 				13508DA3F1E30796A9DE289C /* ShowAllNotesModuleRouter.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -279,7 +286,6 @@
 			children = (
 				65AB9472800DCAA0EE88FD80 /* ShowAllNotesModuleConfiguratorTests.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -292,7 +298,6 @@
 				6C2E0A17306A063996181752 /* Router */,
 				E74CE6DC7ED654C9B6872A58 /* Configurator */,
 			);
-			name = ShowAllNotesModule;
 			path = ShowAllNotesModule;
 			sourceTree = "<group>";
 		};
@@ -301,7 +306,6 @@
 			children = (
 				BC7E80CBAD6D57CEFD4CC1CA /* ShowAllNotesModuleInteractorTests.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -311,7 +315,6 @@
 				2DEECA444A66B047ECB2F663 /* ShowAllNotesModuleModuleInput.swift */,
 				8A1264BA81FFAE1AB5E5EBBE /* ShowAllNotesModulePresenter.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -322,7 +325,6 @@
 				7CF345249C1CF902E1080ECE /* ShowAllNotesModuleInteractorOutput.swift */,
 				632D938903E9A3362847A349 /* ShowAllNotesModuleInteractor.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -340,7 +342,6 @@
 			children = (
 				45E97760239CCAAB86734D61 /* ShowAllNotesModuleViewTests.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -350,7 +351,6 @@
 				C4BC13A50C927A7AD95A7A08 /* ShowAllNotesModuleConfigurator.swift */,
 				4B34B380B00CF9E4E139A0C8 /* ShowAllNotesModuleInitializer.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -566,10 +566,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				195EC829FF9D44B177D5F887 /* ShowAllNotesModuleConfiguratorTests.swift in Sources */,
+				236A1A29200E6DF9001AEA88 /* ShowAllNotesModuleRouter.swift in Sources */,
+				236A1A2B200E6E5F001AEA88 /* ShowAllNotesModuleViewOutput.swift in Sources */,
+				236A1A2E200E6E6C001AEA88 /* ShowAllNotesModuleInteractorOutput.swift in Sources */,
 				7B9CEB2444AB51A2BF8AEC8E /* ShowAllNotesModuleViewTests.swift in Sources */,
+				236A1A2D200E6E6A001AEA88 /* ShowAllNotesModuleInteractorInput.swift in Sources */,
+				236A1A28200E6DF0001AEA88 /* ShowAllNotesModuleInteractor.swift in Sources */,
+				236A1A2C200E6E64001AEA88 /* ShowAllNotesModuleModuleInput.swift in Sources */,
+				236A1A30200E6E83001AEA88 /* ShowAllNotesModuleInitializer.swift in Sources */,
+				236A1A2F200E6E72001AEA88 /* ShowAllNotesModuleRouterInput.swift in Sources */,
 				9AEF466365EB575D433D8669 /* ShowAllNotesModuleInteractorTests.swift in Sources */,
+				236A1A24200E6DA6001AEA88 /* ShowAllNotesModuleViewController.swift in Sources */,
+				236A1A26200E6DCE001AEA88 /* ShowAllNotesModuleConfigurator.swift in Sources */,
 				9DA895EDDE363DDE3ED5C1AC /* ShowAllNotesModulePresenterTests.swift in Sources */,
 				729C6655061BB908456F3A4F /* ShowAllNotesModuleRouterTests.swift in Sources */,
+				236A1A27200E6DE1001AEA88 /* ShowAllNotesModulePresenter.swift in Sources */,
+				236A1A2A200E6E5C001AEA88 /* ShowAllNotesModuleViewInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
