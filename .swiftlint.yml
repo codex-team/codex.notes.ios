@@ -1,6 +1,5 @@
 excluded: # paths to ignore during linting.
   - Pods
-  - Notes/API.swift
   - NotesTests
 
 identifier_name:

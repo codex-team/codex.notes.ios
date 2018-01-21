@@ -8,10 +8,10 @@
 
 protocol ShowAllNotesModuleViewInput: class {
 
-    /**
-        @author Egor Petrov
-        Setup initial state of the view
-    */
-
-    func setupInitialState()
+  /**
+   @author Egor Petrov
+   Setup initial state of the view
+   */
+  
+  func setupInitialState()
 }

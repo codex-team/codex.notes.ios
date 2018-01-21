@@ -19,17 +19,17 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="m4q-6z-rWd" kind="relationship" relationship="rootViewController" id="aeQ-kz-JEr"/>
+                        <segue destination="m4q-6z-rWd" kind="relationship" relationship="rootViewController" id="Igg-6R-U9D"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GMB-Tf-99P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1230" y="-678"/>
         </scene>
-        <!--View Controller-->
+        <!--Show All Notes Module View Controller-->
         <scene sceneID="Wd5-3N-9QA">
             <objects>
-                <viewController id="m4q-6z-rWd" sceneMemberID="viewController">
+                <viewController id="m4q-6z-rWd" customClass="ShowAllNotesModuleViewController" customModule="Notes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GY4-Ly-wyD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,6 +37,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lhs-xk-aeF">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="m4q-6z-rWd" id="G4H-Zt-G9H"/>
+                                    <outlet property="delegate" destination="m4q-6z-rWd" id="KWl-kf-ojo"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -49,6 +53,9 @@
                         <viewLayoutGuide key="safeArea" id="8Yc-hR-bHy"/>
                     </view>
                     <navigationItem key="navigationItem" id="axh-dG-MQs"/>
+                    <connections>
+                        <outlet property="tableView" destination="lhs-xk-aeF" id="RV6-wo-7a4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1S5-JL-18y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

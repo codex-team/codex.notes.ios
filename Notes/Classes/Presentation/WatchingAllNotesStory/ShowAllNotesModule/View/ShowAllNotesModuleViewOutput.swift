@@ -6,12 +6,17 @@
 //  Copyright © 2018 Codex. All rights reserved.
 //
 
+import UIKit
+
 protocol ShowAllNotesModuleViewOutput {
 
-    /**
-        @author Egor Petrov
-        Notify presenter that view is ready
-    */
-
-    func viewIsReady()
+  /**
+   @author Egor Petrov
+   Notify presenter that view is ready
+   */
+  
+  func viewIsReady()
+  
+  func getCountOfNotes() -> Int
+  func createCell(for indexPath: IndexPath) -> UITableViewCell
 }
