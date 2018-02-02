@@ -9,8 +9,8 @@
 import UIKit
 
 class ShowAllNotesModulePresenter: ShowAllNotesModuleModuleInput,
-ShowAllNotesModuleViewOutput,
-ShowAllNotesModuleInteractorOutput {
+                                   ShowAllNotesModuleViewOutput,
+                                   ShowAllNotesModuleInteractorOutput {
 
   weak var view: ShowAllNotesModuleViewInput!
   var interactor: ShowAllNotesModuleInteractorInput!

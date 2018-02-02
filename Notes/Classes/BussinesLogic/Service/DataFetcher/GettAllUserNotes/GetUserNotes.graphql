@@ -1,0 +1,11 @@
+query GetUserNotes($id: ID!){
+  user(id: $id) {
+    folders {
+      notes {
+        id
+        title
+        content
+      }
+    }
+  }
+}

@@ -5,6 +5,7 @@
 ## Build generated
 build/
 DerivedData/
+Notes/API.swift
 
 ## Various settings
 *.pbxuser
