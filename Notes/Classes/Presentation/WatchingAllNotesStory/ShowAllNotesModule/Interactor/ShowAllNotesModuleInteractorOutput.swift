@@ -9,5 +9,6 @@
 import Foundation
 
 protocol ShowAllNotesModuleInteractorOutput: class {
-
+  func show(_ error: Error)
+  func loadIsReady()
 }
